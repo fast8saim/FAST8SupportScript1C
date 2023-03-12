@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьНастройкиВФайл" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьНастройкиВФайл</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьНастройкиВФайлРасширеннаяПодсказка" id="56"/>
+			</Button>
+			<Button name="ФормаЗагрузитьНастройкиИзФайла" id="57">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьНастройкиИзФайла</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьНастройкиИзФайлаРасширеннаяПодсказка" id="58"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ПутьКПлатформе" id="23">
+			<DataPath>Объект.ПутьКПлатформе</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПутьКПлатформеКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="ПутьКПлатформеРасширеннаяПодсказка" id="25"/>
+		</InputField>
+		<InputField name="ПутьКИсполнителю" id="59">
+			<DataPath>Объект.ПутьКИсполнителю</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПутьКИсполнителюКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="ПутьКИсполнителюРасширеннаяПодсказка" id="61"/>
+		</InputField>
+		<InputField name="СтрокаПодключенияКБазе" id="26">
+			<DataPath>Объект.СтрокаПодключенияКБазе</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СтрокаПодключенияКБазеКонтекстноеМеню" id="27"/>
+			<ExtendedTooltip name="СтрокаПодключенияКБазеРасширеннаяПодсказка" id="28"/>
+		</InputField>
+		<InputField name="Пользователь" id="29">
+			<DataPath>Объект.Пользователь</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="30"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="31"/>
+		</InputField>
+		<InputField name="Пароль" id="32">
+			<DataPath>Объект.Пароль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПарольКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="34"/>
+		</InputField>
+		<UsualGroup name="ГруппаПанель" id="39">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПанельРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКоманды" id="35">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКолонкаЛево" id="49">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="50"/>
+							<ChildItems>
+								<Button name="ДобавитьКомандуПодтвердитьЛегальность" id="41">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуПодтвердитьЛегальность</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуПодтвердитьЛегальностьРасширеннаяПодсказка" id="42"/>
+								</Button>
+								<Button name="ДобавитьКомандуЗагрузитьКонфигурацию" id="43">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуЗагрузитьКонфигурацию</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуЗагрузитьКонфигурациюРасширеннаяПодсказка" id="44"/>
+								</Button>
+								<Button name="ДобавитьКомандуУдалитьПатчи" id="37">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуУдалитьПатчи</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуУдалитьПатчиРасширеннаяПодсказка" id="38"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКолонкаПраво" id="51">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<Button name="ДобавитьКомандуОтключитьсяОтХранилища" id="47">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуОтключитьсяОтХранилища</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуОтключитьсяОтХранилищаРасширеннаяПодсказка" id="48"/>
+								</Button>
+								<Button name="ДобавитьКомандуЗапуститьОтложенноеОбновление" id="45">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуЗапуститьОтложенноеОбновление</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуЗапуститьОтложенноеОбновлениеРасширеннаяПодсказка" id="46"/>
+								</Button>
+								<Button name="ДобавитьКомандуПодключитьсяКХранилищу" id="53">
+									<Type>UsualButton</Type>
+									<Width>8</Width>
+									<Height>4</Height>
+									<CommandName>Form.Command.ДобавитьКомандуПодключитьсяКХранилищу</CommandName>
+									<ExtendedTooltip name="ДобавитьКомандуПодключитьсяКХранилищуРасширеннаяПодсказка" id="54"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="Действия" id="1">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Действия</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ДействияКонтекстноеМеню" id="2"/>
+					<AutoCommandBar name="ДействияКоманднаяПанель" id="3">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="ДействияСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>Действия</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДействияСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="ДействияСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ДействияСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>Действия</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ДействияСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ДействияСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ДействияУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>Действия</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ДействияУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ДействияУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ДействияНомерСтроки" id="14">
+							<DataPath>Объект.Действия.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДействияНомерСтрокиКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ДействияНомерСтрокиРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<InputField name="ДействияДействие" id="17">
+							<DataPath>Объект.Действия.Действие</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДействияДействиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="ДействияДействиеРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<CheckBoxField name="ДействияВыполнено" id="20">
+							<DataPath>Объект.Действия.Выполнено</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДействияВыполненоКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ДействияВыполненоРасширеннаяПодсказка" id="22"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.fast8UpdateHelper</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ЭтоФайловаяБаза" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это файловая база</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтложенноеОбновлениеЗавершено" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенное обновление завершено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьКомандуУдалитьПатчи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду удалить патчи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду удалить патчи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуУдалитьПатчи</Action>
+		</Command>
+		<Command name="ДобавитьКомандуПодтвердитьЛегальность" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду подтвердить легальность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду подтвердить легальность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуПодтвердитьЛегальность</Action>
+		</Command>
+		<Command name="ДобавитьКомандуЗагрузитьКонфигурацию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду загрузить конфигурацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду загрузить конфигурацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуЗагрузитьКонфигурацию</Action>
+		</Command>
+		<Command name="ДобавитьКомандуЗапуститьОтложенноеОбновление" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду запустить отложенное обновление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду запустить отложенное обновление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуЗапуститьОтложенноеОбновление</Action>
+		</Command>
+		<Command name="ДобавитьКомандуОтключитьсяОтХранилища" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду отключиться от хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду отключиться от хранилища</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуОтключитьсяОтХранилища</Action>
+		</Command>
+		<Command name="ДобавитьКомандуПодключитьсяКХранилищу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду подключиться к хранилищу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить команду подключиться к хранилищу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомандуПодключитьсяКХранилищу</Action>
+		</Command>
+		<Command name="ЗагрузитьНастройкиИзФайла" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьНастройкиИзФайла</Action>
+		</Command>
+		<Command name="СохранитьНастройкиВФайл" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНастройкиВФайл</Action>
+		</Command>
+	</Commands>
+</Form>
